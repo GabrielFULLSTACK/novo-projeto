@@ -3,13 +3,22 @@ body{
     background:rgb(203, 200, 200);
     color:rgb(24, 23, 23);
 }
-
-
-
-
-
-
-
+header> h1, header > h3{text-align: center;}
+nav > details{
+    position: fixed;
+    top: 20px;
+    left:40px;
+    
+}
+nav > details > li{ left: -50px; position: relative;}
+header > img{margin: auto;
+position: relative ;
+}
+summary::marker{ 
+content: url('../imagens/menu.png');
+;}
+summary::marker:hover{ content: url('../imagens/menu1.png');}
    
+
 
 
