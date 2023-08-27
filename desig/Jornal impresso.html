@@ -5,23 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jornal Impresso</title>
     <style>
-       @font-face {
-        font-family: "Android";
-        src: url('Journalistic.ttf') format('truetype');
-       }
-       @font-face {
-        font-family: 'Android1';
-        src: url('../font/Canterbury.ttf') format('truetype') 
-        url('../font/Journalistic.woff2') format('woff2')
-        url('../font/Journalistic.woff') format('woff');
-      
-        font-weight: normal; 
-       }
- body{
+    @font-face {
+        font-family: 'pamela';
+        src: url('../font/Pamela.ttf') format('truetype');
+        font-weight:100;
+    font-style:italic;
+    font-display:swap;
+    }
+   @font-face{
+    font-family: "Journalistic";
+    src: url("../font/1d980b874473ee924182fb155ccfe605.eot");
+    src: url("../font/1d980b874473ee924182fb155ccfe605.eot?#iefix")format("embedded-opentype"),
+        url("../font/1d980b874473ee924182fb155ccfe605.woff")format("woff"),
+        url("../font/1d980b874473ee924182fb155ccfe605.woff2")format("woff2"),
+        url("../font/1d980b874473ee924182fb155ccfe605.ttf")format("truetype"),
+        url("../font/1d980b874473ee924182fb155ccfe605.svg#Journalistic")format("svg");
+    font-weight:200;
+    font-style:normal;
+    font-display:swap;
+}
+
+
+ h1{
     text-align:center;
-    font-family: 'Android', cursive;
-    
-  
+    font-family: 'Journalistic', cursive;
+   font-weight: lighter;
+ 
 }
 
 
