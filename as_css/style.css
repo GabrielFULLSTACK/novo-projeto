@@ -1,4 +1,8 @@
 @charset "UTF-8";
+*{
+    margin: 0%;
+    padding: 0%;
+}
 body{
     background:rgb(203, 200, 200);
     color:rgb(24, 23, 23);
@@ -17,8 +21,31 @@ position: relative ;
 summary::marker{ 
 content: url('../imagens/menu2.png');
 ;}
+img{
+    display:block;
+    width:50%;
+    margin: auto;
+}
+#social{   text-align: center;}
+ #social > a{
+    padding-left: 30px;
+    text-decoration:none;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+ }  
+ #social > a:hover{
+    text-decoration:underline;
+}
+article{
+ columns: 3;
+    }
+  article > aside{
 
-   
+   padding: 20px;
+  
 
+    }
 
+    
 
