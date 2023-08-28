@@ -32,6 +32,7 @@
             menu{
                 display:none;
                 text-align: center;
+                transition: 4s;
             }
             menu >  li{
             
