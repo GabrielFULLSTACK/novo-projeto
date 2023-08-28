@@ -1,5 +1,5 @@
-{
-  "extends": [
+ /* {
+"extends": [
     "development"
   ],
   "hints": {
@@ -8,6 +8,7 @@
       {
         "link-name": "off"
       }
-    ]
+    ],
+    "no-inline-styles": "off"
   }
-}
+}*/

@@ -1,7 +1,12 @@
 function abrir_menu()
 {
- 
-   let menuu = document.querySelector("menu");
-   menuu.style = 'display:block;'
+     
+     
+      if(items.style.display == 'block'){
+         items.style.display = 'none'
+      }
+      else  { 
+         items.style.display = 'block'
+     }
 //if()
 }
