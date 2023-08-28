@@ -8,5 +8,5 @@ function abrir_menu()
       else  { 
          items.style.display = 'block'
      }
-//if()
+
 }
