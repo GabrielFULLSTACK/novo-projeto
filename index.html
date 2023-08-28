@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Gabriel Marques</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="/as_css/style.css">
 </head>
 <body>
@@ -12,20 +13,20 @@
        <h3>Desenvolvedor Full Stack</h3>
        <img src="https://www.pngall.com/wp-content/uploads/5/User-Profile-PNG-Picture.png" alt="minha foto">
     </header>
-    <nav>
-    <details >
-        <summary>    </summary>
+    <span id="naveg" onclick="abrir_menu()" class="material-symbols-outlined">
+        menu
+        </span>
+    <menu id="menuu">
+   
         <li><a href="#quem">Quem sou</a></li>
         <li><a href="#experiencias">Experiencias</a></li>
          <li><a href="#projetos">Projetos</a></li>
-    </details>
-
-    </nav>
+    </menu>
     <main>
 <h2>Titulo do Eslogan</h2>
 <p style="margin-bottom:50px;">Paragrafo do Eslogan</p>
 
-<h2>Quem Sou</h2>
+<h2 id="quem">Quem Sou</h2>
 <p>Meu nome é Gabriel Marques do Nascimento mais conhecido como gau,Atulmente Desnvolvedor Web ...................... , Desenvolvo Interfaces respocivas e de alta qualidade</p>
 <p>Concentrando em performace,Animacões............ </p>
 <nav id="social">
@@ -37,11 +38,11 @@
 <a href="Behance"></a>
 </nav>
 
-<h2>Experiências</h2> 
+<h2 id="experiencias">Experiências</h2> 
 <p>
     lista com details que desaparece        se o outro for clicado</p>
 
-       <h2>Projetos </h2>
+       <h2 id="projetos">Projetos </h2>
 <article>
  
 <aside> 
@@ -87,6 +88,7 @@ de forma  clara objetiva
         Copyright &copy; 2023  <a href="#">site.com </a>  Todos direitos reservados
 
     </footer>
+    <script src="./java/menu.js"></script>
 </body>
 </html>
 
