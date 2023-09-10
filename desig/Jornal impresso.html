@@ -26,9 +26,16 @@
     font-style:normal;
     font-display:swap;
 }
+*{
+    padding: 0%;
+    margin: 0px;
+}
 body{
+    background-image: linear-gradient(to bottom,#84715f 1%,#b2a496  ,#c0b5ac ,#c7c0b9   ,#cbbdb1,#ab9988,#84715f  ) ;
+                                    
+  
     display: grid;
-    grid-template-columns: 20vw repeat(4, 1fr);
+    grid-template-columns: 20vw repeat(4, auto);
     grid-template-rows: repeat(3,auto);
     grid-template-areas: 
     "section header header header"
@@ -39,32 +46,47 @@ body{
 }
 header{
     grid-area: header;
+    
 }
 section{
     grid-area: section;
+    border-right: 2px solid black;
+    padding: 0px 9px 0px 9px;
 }
 main{
+    padding: 0px 9px 0px 9px;
     grid-area: main;
     display: grid;
-    grid-template-columns:  repeat(5, auto);
-    grid-template-rows: repeat(3,auto);
-    /* grid-template-areas: 
-         ".  img   ."
-        "p   p   p"
-        "p2  p2  p2" */
-
-    ;
+    grid-template-columns:  repeat(3, 1fr);
+    grid-template-rows: repeat(8,1fr);
+    @media (max-width:720px) {
+        
+    }
+ grid-template-areas: 
+       ". img . "
+       " p p p "
+       
+       
+    
 }
 footer{
     grid-area: footer;
 }
 
  h1{
+    text-shadow: white 0px -1px 2px;
     text-align:center;
     font-family: 'Journalistic', cursive;
    font-weight: lighter;
    font-size: 6.5vw;
 
+}
+h2{
+    text-shadow: white 0px .5px 2px;
+}
+  
+p{
+    font-size: 2.5vh;
 }
 
 header > aside{
@@ -74,25 +96,23 @@ header > aside{
 }
 
 
-main > img{
-    grid-column: 1/-1;
-    grid-row: 1;
-    /* grid-area: img; */
-    display: block;
+main > #img{
+     grid-area: img; 
+    /* display: block;  margin: 0% auto; */
+}
+main > #img > img{
+    /* display: block;  margin: 0% auto; */
     max-width: 22vw;
     min-width: 200px;
-    margin: 0% auto;
+  
     box-shadow: inset 7px 7px 7px 6px;
 }
-main > p:nth-child(1){
-    /* grid-area: p; */
-    grid-column: 1/-1;
-    grid-row: 2;
+main > p{
+     grid-area: p; 
+
 }
-main > p:nth-child(2){
-    /* grid-area: p2; */
-    grid-column: 1/-1;
-    grid-row: 3;
+b{
+ 
 }
 
     </style>
@@ -105,20 +125,29 @@ main > p:nth-child(2){
        </aside>
     </header>
     <section>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam architecto natus, nam incidunt enim esse itaque iste, voluptatum accusamus assumenda, quis earum eveniet in? Deleniti, dolores reiciendis? Porro, id ut.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sequi, dignissimos ut amet veritatis, voluptatum maiores nesciunt minus adipisci quas veniam magni eligendi nihil aliquid laboriosam corporis tempore incidunt dolore.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, dignissimos maxime eos consequatur cupiditate ratione nihil cum nesciunt quasi, iste dolorem fugit qui inventore doloremque tenetur reprehenderit. Laudantium, sit itaque!</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum ut illum doloremque id earum, sequi vitae recusandae nulla hic suscipit iusto cupiditate quaerat, nobis eaque optio rem modi voluptates provident?</p>
+ 
 
+<h2>
+    Minhas Habilidades
+
+</h2>
+<br>
+<p>Linguagens de Programação: Sou proficiente em HTML5, CSS3, JavaScript e PHP. Estou sempre atualizado com as tendências mais recentes em desenvolvimento web.</p>
+
+<p>Frameworks e Bibliotecas: Tenho experiência com frameworks populares, como React e Angular, e utilizo bibliotecas como jQuery para criar interatividade.</p>
+
+<p>Desenvolvimento Responsivo: Crio sites e aplicativos que oferecem uma experiência perfeita em todos os dispositivos, do desktop ao celular.</p>
+
+<p>
+    Gestão de Banco de Dados: Trabalho com bancos de dados MySQL e MongoDB, garantindo que os dados dos meus projetos sejam seguros e eficientes.
+    
+    Integração API: Tenho experiência em integrar APIs de terceiros, como redes sociais e serviços de pagamento, para expandir as funcionalidades dos meus projetos.
+</p>
     </section>
     <main>
      
-        <img src="../imagens/mikey_realistic-910x1099.png" alt="perfil">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore rerum, architecto odio officiis consequuntur voluptatum repellendus quod ducimus a quos repudiandae! Quos ipsam error voluptas inventore, quod quo neque consequatur!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima debitis eius ipsam possimus et quia fugiat iusto voluptas quas omnis amet saepe laborum culpa commodi, praesentium odio deleniti soluta nihil.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores fugit dolorem, delectus deleniti voluptas voluptatum, totam odio fugiat exercitationem, nobis blanditiis voluptatem id? Labore ut consequatur consequuntur, at nulla libero.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis suscipit omnis repellat delectus magnam itaque incidunt aliquam, praesentium possimus iste quidem quaerat saepe laudantium vitae doloremque laborum consequatur sunt enim.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolore magni nemo consequuntur sit nisi mollitia. Ratione, rerum ipsum dolores quo quisquam eum dicta ea incidunt. Exercitationem, tenetur. Consectetur, expedita?
+        <div id="img"><img src="../imagens/mikey_realistic-910x1099.png" alt="perfil"></div>
+        <p>Olá, eu sou <strong>Gabriel </strong>, um apaixonado desenvolvedor web com uma paixão por criar experiências digitais excepcionais. Minha jornada no mundo do desenvolvimento começou com a curiosidade de desvendar os mistérios da web, e desde então, venho explorando e aprimorando minhas habilidades para criar soluções impactantes.
         </p>
     </main>
 
