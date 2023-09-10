@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jornal Impresso</title>
+
+
     <style>
     @font-face {
         font-family: 'pamela';
@@ -24,32 +26,74 @@
     font-style:normal;
     font-display:swap;
 }
+body{
+    display: grid;
+    grid-template-columns: 20vw repeat(4, 1fr);
+    grid-template-rows: repeat(3,auto);
+    grid-template-areas: 
+    "section header header header"
+    "section main main main "  
+    "section main main main"
+    "footer footer footer footer"
+    ;
+}
+header{
+    grid-area: header;
+}
+section{
+    grid-area: section;
+}
+main{
+    grid-area: main;
+    display: grid;
+    grid-template-columns:  repeat(5, auto);
+    grid-template-rows: repeat(3,auto);
+    /* grid-template-areas: 
+         ".  img   ."
+        "p   p   p"
+        "p2  p2  p2" */
 
+    ;
+}
+footer{
+    grid-area: footer;
+}
 
  h1{
     text-align:center;
     font-family: 'Journalistic', cursive;
    font-weight: lighter;
    font-size: 6.5vw;
- 
+
 }
+
 header > aside{
     border-top: 2px solid black;
     border-bottom: 2px solid black   ;
     
 }
-b{
-    position: absolute;
-   right: 16px;
-}
-img{
+
+
+main > img{
+    grid-column: 1/-1;
+    grid-row: 1;
+    /* grid-area: img; */
     display: block;
     max-width: 22vw;
     min-width: 200px;
     margin: 0% auto;
     box-shadow: inset 7px 7px 7px 6px;
 }
-
+main > p:nth-child(1){
+    /* grid-area: p; */
+    grid-column: 1/-1;
+    grid-row: 2;
+}
+main > p:nth-child(2){
+    /* grid-area: p2; */
+    grid-column: 1/-1;
+    grid-row: 3;
+}
 
     </style>
 </head>
@@ -60,12 +104,22 @@ img{
            <p><span>VOL VIII.</span> <b>No. 21</b></p>
        </aside>
     </header>
+    <section>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam architecto natus, nam incidunt enim esse itaque iste, voluptatum accusamus assumenda, quis earum eveniet in? Deleniti, dolores reiciendis? Porro, id ut.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sequi, dignissimos ut amet veritatis, voluptatum maiores nesciunt minus adipisci quas veniam magni eligendi nihil aliquid laboriosam corporis tempore incidunt dolore.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, dignissimos maxime eos consequatur cupiditate ratione nihil cum nesciunt quasi, iste dolorem fugit qui inventore doloremque tenetur reprehenderit. Laudantium, sit itaque!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum ut illum doloremque id earum, sequi vitae recusandae nulla hic suscipit iusto cupiditate quaerat, nobis eaque optio rem modi voluptates provident?</p>
 
+    </section>
     <main>
      
         <img src="../imagens/mikey_realistic-910x1099.png" alt="perfil">
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore rerum, architecto odio officiis consequuntur voluptatum repellendus quod ducimus a quos repudiandae! Quos ipsam error voluptas inventore, quod quo neque consequatur!</p>
-
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima debitis eius ipsam possimus et quia fugiat iusto voluptas quas omnis amet saepe laborum culpa commodi, praesentium odio deleniti soluta nihil.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores fugit dolorem, delectus deleniti voluptas voluptatum, totam odio fugiat exercitationem, nobis blanditiis voluptatem id? Labore ut consequatur consequuntur, at nulla libero.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis suscipit omnis repellat delectus magnam itaque incidunt aliquam, praesentium possimus iste quidem quaerat saepe laudantium vitae doloremque laborum consequatur sunt enim.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolore magni nemo consequuntur sit nisi mollitia. Ratione, rerum ipsum dolores quo quisquam eum dicta ea incidunt. Exercitationem, tenetur. Consectetur, expedita?
+        </p>
     </main>
 
     <footer>
