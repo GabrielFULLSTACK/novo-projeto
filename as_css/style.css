@@ -38,7 +38,19 @@
             
                 list-style: none;
             }
-            menu a {
+            button{
+                padding: 10px;
+                box-shadow: inset -2px 1px 12px 0px black;
+                text-shadow: 1px 1px 1px white ;
+            }
+            button :hover{
+                padding: 10px;
+                box-shadow: inset -2px 1px 12px 0px rgb(255, 255, 255);
+                text-shadow: 1px 1px 1px rgb(255, 255, 255) ;
+                background-color: black;
+                color: white;
+            }
+            menu a{
                 display: block;
                 padding: 10px;
                 background: rgb(90, 90, 90);
@@ -102,3 +114,28 @@
                 .displayer{
                     display: block;
                 }
+                .parag{margin: 7px 0px 50px 0;
+                padding-left: 15px ;
+                }
+                /*   botonhes*/
+                #dark{
+                   display: none;
+                }
+
+
+                 /*    themas escuro*/
+                 .dark{
+                    background-color: rgb(59, 57, 57);
+                    color: white;
+                 }
+                /* thema claro */
+                 .whiite{
+                     background-color: white;
+                     color: black;
+                 }
+
+
+
+
+
+

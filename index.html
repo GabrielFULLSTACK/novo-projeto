@@ -22,10 +22,13 @@
         <li><a href="#quem">Quem sou</a></li>
         <li><a href="#experiencias">Experiencias</a></li>
          <li><a href="#projetos">Projetos</a></li>
+         <button id="claro" onclick="color('whiite')">white</button>
+         <button id="dark" onclick="color('dark')">Dark</button>
+       
     </menu>
     <main>
 <h2>Titulo do Eslogan</h2>
-<p style="margin-bottom:50px;">Paragrafo do Eslogan</p>
+<p class="parag">Paragrafo do Eslogan</p>
 
 <h2 id="quem">Quem Sou</h2>
 <p>Meu nome é Gabriel Marques do Nascimento mais conhecido como gau,Atulmente Desnvolvedor Web ...................... , Desenvolvo Interfaces respocivas e de alta qualidade</p>
@@ -36,7 +39,8 @@
 <a href="#social">Linkedin</a>
 <a href="#social">Discord</a>
 <a href="#social">GitHub</a>
-<a href="#Behance"></a>
+<a href="#Behance">Behance</a>
+
 </nav>
 
 <h2 id="experiencias">Experiências</h2> 
@@ -92,7 +96,7 @@ de forma  clara objetiva
     <script >
     function abrir_menu()
         {
-             
+             // menu 
              
               if(items.style.display == 'block'){
                  items.style.display = 'none'
@@ -101,7 +105,32 @@ de forma  clara objetiva
                  items.style.display = 'block'
              }
         
-        }</script>
+        }
+        const claro = document.querySelector("button#claro");
+        const dark = document.querySelector("button#dark");
+        function color(params) {
+         if (params == 'dark') {
+            claro.style.display = "block";
+            dark.style.display = "none";
+         } else if( params == 'white') {
+            claro.style.display = "none";
+            dark.style.display = "grid";
+
+         };
+        //  const body = ducument.querySelector('body');
+        //  body.target.classList.add(params);
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </script>
 </body>
 </html>
 
