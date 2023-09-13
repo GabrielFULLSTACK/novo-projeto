@@ -9,8 +9,8 @@
             }
             body{
                 font-family:  'android';
-                background:rgb(203, 200, 200);
-                color:rgb(24, 23, 23);
+                /* background:rgb(203, 200, 200);
+                color:rgb(24, 23, 23); */
             }
             header> h1, header > h3{text-align: center;}
             nav > details{
@@ -118,8 +118,7 @@
                 padding-left: 15px ;
                 }
                 /*   botonhes*/
-                #dark{
-                   display: none;
+                #claro{
                 }
 
 

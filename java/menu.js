@@ -10,3 +10,19 @@ function abrir_menu()
      }
 
 }
+function color(cores) {
+    document.querySelector('body').style.backgroundImage = 'black'
+   
+   }
+   
+
+
+
+
+
+
+
+
+
+
+
