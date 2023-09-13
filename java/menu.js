@@ -9,6 +9,7 @@
 //          items.style.display = 'block'
 //      }
 
+<<<<<<< HEAD
 // }
 
 const fundo = color => {
@@ -20,3 +21,22 @@ else if(){
    
 }
 }
+=======
+}
+function color(cores) {
+    document.querySelector('body').style.backgroundImage = 'black'
+   
+   }
+   
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> cd8b31769e19218f7cd22b394e0da04cfd7f3d49
