@@ -1,102 +1,119 @@
-            @charset "UTF-8";
-            *{
-                margin: 0%;
-                padding: 0%;
-            }
-            @font-face {
-                font-family: 'android';
-                src: url('/font/Journalistic.ttf') format('truetype');
-            }
-            body{
-                font-family:  'android';
-                background:rgb(203, 200, 200);
-                color:rgb(24, 23, 23);
-            }
-            header> h1, header > h3{text-align: center;}
-            nav > details{
-                position: fixed;
-                top: 20px;
-                left:40px;
-            }
-            #naveg{
-                display:block;
-                background-color: black;
-                color: white;
-                text-align: center;
-                padding: 10px;
-            }
-            #naveg:hover{
-                         cursor:pointer;
-                         color: rgb(172, 170, 170);
-            }
-            menu{
-                display:none;
-            }
-            menu >  li{
-            
-                list-style: none;
-            }
-            menu a {
-                display: block;
-                padding: 10px;
-                background: rgb(90, 90, 90);
-                color: white;
-                border-top: grey solid ;
+@charset "UTF-8";
+* {
+  margin: 0%;
 
-            }
-            menu a:hover {
-                background: grey;
-            }
+  
+  padding: 0%;
+}
+@font-face {
+  font-family: "android";
+  src: url("/font/Journalistic.ttf") format("truetype");
+}
+body {
+  font-family: "android";
+  background: rgb(203, 200, 200);
+  color: rgb(24, 23, 23);
+  font-size: larger;
 
-            header > img{margin: auto;
-            position: relative ;
-            }
-            main{
-                padding: 15px;
-            }
 
-            summary::marker{ 
-            content: url('../imagens/menu2.png');
-            }
-            img{
-                display:block;
-                max-width:30%;
-                margin: auto;
-            }
-            #social{   text-align: center;}
-            #social > a{
-                padding-left: 30px;
-                text-decoration:none;
-                color: black;
-                font-size: 18px;
-                text-align: center;
-            }  
-            #social > a:hover{
-                text-decoration:underline;
-            }
-            article{
-            columns: 3;
-                }
-            article > aside{
-             text-align: justify;
-             margin-bottom: 10px;
-             text-indent: 10px;
-            padding: 20px;
-            
 
-                }
 
-                footer{
-                    text-align: center;
-                }
-                a{ 
-                    text-decoration: none;
-                    color: black;
-                }
-                a:hover{
-                    color: rgb(0, 0, 0);
-                    text-decoration: underline;
-                }
-                .displayer{
-                    display: block;
-                }
+
+
+
+
+
+  flex-direction: column-reverse;
+}
+header > h1,
+header > h3 {
+  text-align: center;
+}
+nav > details {
+  position: fixed;
+  top: 20px;
+
+  left: 40px;
+}
+#naveg {
+  display: block;
+
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+#naveg:hover {
+  cursor: pointer;
+  color: rgb(172, 170, 170);
+}
+menu {
+  display: none;
+}
+menu > li {
+  list-style: none;
+}
+menu a {
+  display: block;
+  padding: 10px;
+  background: rgb(90, 90, 90);
+  color: white;
+  border-top: grey solid;
+}
+menu a:hover {
+  background: grey;
+}
+
+header > img {
+  margin: auto;
+  position: relative;
+}
+main {
+  padding: 15px;
+}
+
+summary::marker {
+  content: url("../imagens/menu2.png");
+}
+img {
+  display: block;
+  max-width: 30%;
+  margin: auto;
+}
+#social {
+  text-align: center;
+}
+#social > a {
+  padding-left: 30px;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  text-align: center;
+}
+#social > a:hover {
+  text-decoration: underline;
+}
+article {
+  columns: 3;
+}
+article > aside {
+  text-align: justify;
+  margin-bottom: 10px;
+  text-indent: 10px;
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+}
+.displayer {
+  display: block;
+}
