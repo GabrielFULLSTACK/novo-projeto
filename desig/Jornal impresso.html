@@ -17,7 +17,7 @@
    @font-face{
     font-family: "Journalistic";
     src: url("../font/1d980b874473ee924182fb155ccfe605.eot");
-    src: url("../font/1d980b874473ee924182fb155ccfe605.eot?#iefix")format("embedded-opentype"),
+    src: url("../font/1d980b874473ee924182fb155ccfe605.eot?#iefix")format("embedded-opentype") ,
         url("../font/1d980b874473ee924182fb155ccfe605.woff")format("woff"),
         url("../font/1d980b874473ee924182fb155ccfe605.woff2")format("woff2"),
         url("../font/1d980b874473ee924182fb155ccfe605.ttf")format("truetype"),
@@ -46,7 +46,11 @@ body{
 }
 header{
     grid-area: header;
+    text-align: center;
     
+}
+header> p{
+    font-size: 19px;
 }
 section{
     grid-area: section;
@@ -132,6 +136,7 @@ span{
 <body>                   
     <header>
        <h1>Gabriel Marques do Nascimento.</h1>
+       <p>Desenvolvedor Web</p>
        <aside>
           <p>VOL XXI. <b> No. 08</b></p> 
        </aside>
