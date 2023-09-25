@@ -47,10 +47,19 @@
         grid-template-columns: 20vw repeat(4, auto);
         grid-template-rows: repeat(3, auto);
         grid-template-areas:
-          "section header header header"
-          "section main main main "
-          "section main main main"
+          "habilidades header header header"
+          "habilidades main main main "
+          "habilidades portifolio portifolio portifolio"
           "footer footer footer footer";
+        @media (max-width: 500px) {
+          grid-template-columns: 20vw repeat(2, auto);
+          grid-template-areas:
+            " header header"
+            " main main"
+            "habilidades habilidades"
+            "portifolio portifolio"
+            "footer footer";
+        }
       }
       header {
         grid-area: header;
@@ -59,22 +68,31 @@
       header > p {
         font-size: 19px;
       }
-      section {
-        grid-area: section;
+      #habilidades {
+       
+        grid-area: habilidades;
         border-right: 2px solid black;
         padding: 0px 9px 0px 9px;
+      }
+      #portifolio{
+         padding: 20px 10px 30px 10px;
+        grid-area: portifolio;
       }
       main {
         padding: 0px 9px 0px 9px;
         grid-area: main;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(8, 1fr);
-        @media (max-width: 720px) {
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(2, auto);
+        @media (max-width: 520px) {
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(3, auto);
         }
         grid-template-areas:
           ". img . "
-          " p p p ";
+          " p p p " 
+         
+        
       }
       footer {
         grid-area: footer;
@@ -93,9 +111,12 @@
       }
 
       p {
+       
         font-size: 2.2vw;
       }
-
+      section > p {
+        padding: 10px;
+      }
       header > aside {
         border: 2px solid black;
         height: 2.5vw;
@@ -103,30 +124,29 @@
       }
 
       main > #img {
-        grid-area: img;
         /* display: block;  margin: 0% auto; */
       }
-      main > #img > img {
+      main > img {
+        grid-area: img;
         /* display: block;  margin: 0% auto; */
         max-width: 22vw;
         min-width: 200px;
-
+        padding: 0%;
         box-shadow: inset 7px 7px 7px 6px;
       }
       main > p {
         grid-area: p;
       }
+     section {
+        grid-area: section;
+      }
       header > p {
         display: inline;
         position: relative;
       }
-      p > b {
-        position: absolute;
-        right: 8%;
-      }
-      span {
-        font-size: 4vw;
-      }
+    footer{
+      text-align: center;
+    }
     </style>
   </head>
   <body>
@@ -134,10 +154,10 @@
       <h1>Gabriel Marques do Nascimento.</h1>
       <p>Desenvolvedor Web</p>
       <aside>
-        <p>VOL XXI. <b> No. 08</b></p>
+        <p><span>VOL XXI.</span> <b> No. 08</b></p>
       </aside>
     </header>
-    <section>
+    <section id="habilidades">
       <h2><span>M</span>inhas Habilidades</h2>
       <br />
       <p>
@@ -169,9 +189,8 @@
       </p>
     </section>
     <main>
-      <div id="img">
-        <img src="../imagens/mikey_realistic-910x1099.png" alt="perfil" />
-      </div>
+      <img src="../imagens/mikey_realistic-910x1099.png" alt="perfil" />
+
       <p>
         <span>O</span>lá, eu sou <strong>Gabriel </strong>, um apaixonado
         desenvolvedor web com uma paixão por criar experiências digitais
@@ -180,8 +199,64 @@
         explorando e aprimorando minhas habilidades para criar soluções
         impactantes.
       </p>
-    </main>
 
-    <footer></footer>
+    </main>
+<section id="portifolio">
+  
+        <h3>Meu Portfólio</h3> <p>
+          Aqui estão alguns dos projetos recentes que tenho orgulho de
+          ter trabalhado:
+        </p>
+         <h3>[Nome do Projeto]</h3> <p>
+           - Desenvolvi um site dinâmico para uma
+                   startup de tecnologia que aumentou sua presença online e ajudou a atrair
+                   novos clientes.
+         </p> <h3>[Nome do Projeto]</h3><p>
+            - Criei um aplicativo web responsivo que
+                   otimizou a experiência do usuário em dispositivos móveis, resultando em
+                   uma taxa de conversão significativamente maior.
+         </p> <h3>[Nome do Projeto]</h3><p>
+            -
+                   Participei do desenvolvimento de uma plataforma de comércio eletrônico que
+                   viu um aumento notável nas vendas após a implementação de recursos de
+                   recomendação personalizada.
+         </p> <h2>Meu Processo de Trabalho</h2> 
+         <h3> Compreensão do
+                   Cliente:</h3>
+         <p>
+           Antes de começar qualquer projeto, dedico tempo para entender as
+                   necessidades do cliente e suas metas específicas.
+         </p> <h3>Design Responsivo:</h3>
+        <p>
+          Concentro-me na criação de designs atraentes e funcionais que se ajustem a
+          qualquer tela. Desenvolvimento Eficiente: Escolho as melhores tecnologias
+          para cada projeto, garantindo um desenvolvimento eficiente e de alta
+          qualidade.
+        </p> <h3>Testes Rigorosos:</h3> <p>
+          Realizo testes abrangentes em diferentes
+          navegadores e dispositivos para garantir a compatibilidade e desempenho
+          ideais.
+        </p> <h3>Manutenção Contínua: </h3><p>
+          Ofereço suporte pós-lançamento, garantindo
+          que os sites e aplicativos que crio continuem funcionando sem problemas.
+        </p>
+        <h3>Contato </h3><p>
+          Estou sempre aberto a novos desafios e colaborações interessantes.
+          Se você deseja discutir um projeto ou apenas bater um papo sobre
+          desenvolvimento web, não hesite em entrar em contato comigo em [seu
+          endereço de e-mail] ou [seu site pessoal, LinkedIn, ou outra plataforma de
+          contato].
+        </p><p>
+           Vamos trabalhar juntos para transformar suas ideias em realidade
+          na web!
+        </p><p>
+          Lembre-se de personalizar o texto de acordo com suas próprias
+          experiências, habilidades e projetos. Seu portfólio deve refletir sua
+          personalidade e o tipo de desenvolvedor web que você é.
+        </p>
+</section>
+    <footer>
+      Copyright &copy; 2023 <a href="#">site.com </a> Todos direitos reservados
+    </footer>
   </body>
 </html>
