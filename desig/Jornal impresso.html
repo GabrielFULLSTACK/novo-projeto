@@ -14,12 +14,14 @@
     <style>
 
 .hidden{
+     transform: translateX(-100%);
     opacity: 0;
     filter: blur(15px); /*desfoque*/
     transition: all 1s; /* all = todos elemt  2s = tempo de transition*/
  
 }
 .show{
+  transform: translateX(0%);
     opacity: 1;
     transition: all 2s;  /* 3 segundos para aparecer e focar*/
     filter: blur(0); /*desfoque*/
@@ -48,157 +50,7 @@
         font-style: normal;
         font-display: swap;
       }
-      * {
-        padding: 0%;
-        margin: 0px;
-      }
-      body {
-        background-image: linear-gradient(
-          to bottom,
-          #84715f 1%,
-          #b2a496,
-          #c0b5ac,
-          #c7c0b9,
-          #cbbdb1,
-          #ab9988,
-          #84715f
-        );
-
-        display: grid;
-        grid-template-columns: 20vw repeat(4, auto);
-        grid-template-rows: repeat(3, auto);
-        grid-template-areas:
-          "habilidades header header header"
-          "habilidades main main main "
-          "habilidades portifolio portifolio portifolio"
-          "footer footer footer footer";
-        @media (max-width: 650px) {
-          grid-template-columns: 20vw repeat(2, auto);
-          grid-template-areas:
-            " header header"
-            " main main"
-            "habilidades habilidades"
-            "portifolio portifolio"
-            "footer footer";
-         
-        }
-      }
-        header {
-        grid-area: header;
-        text-align: center;
-      }
-      header > p {
-        font-size: 19px;
-      }
-      #habilidades {
-        grid-area: habilidades;
-        border-right: 2px solid black;
-        padding: 0px 9px 0px 9px;
-      }
-      #portifolio {
-        padding: 20px 10px 30px 10px;
-        grid-area: portifolio;
-      }
-      main {
-        padding: 0px 9px 0px 9px;
-        grid-area: main;
-        display: grid;
-        grid-template-columns: repeat(3, auto);
-        grid-template-rows: repeat(2, auto);
-        @media (max-width: 520px) {
-          grid-template-columns: repeat(3, 1fr);
-          grid-template-rows: repeat(3, auto);
-        }
-        grid-template-areas:
-          ". img . "
-          " p p p ";
-      }
-      footer {
-        grid-area: footer;
-      }
-
-      h1 {
-        text-shadow: white 0px -1px 2px;
-        text-align: center;
-        font-family: "Journalistic", cursive;
-        font-weight: lighter;
-        font-size: 6.5vw;
-      }
-      h2 {
-        text-shadow: white 0px 0.5px 2px;
-        font-size: 2.7vw; 
-      }
-
-      p {
-       font-size: 2.2vw;
-      }
-      section > p {
-        padding: 10px;
-      }
-      header > aside {
-        border: 2px solid black;
-        border-left: #c7c0b9;
-        height: 2.5vw;
-        padding: 0px 0px 0px 6%;
-      }
-
-      main > #img {
-        /* display: block;  margin: 0% auto; */
-      }
-      main > img {
-        grid-area: img;
-        /* display: block;  margin: 0% auto; */
-        max-width: 22vw;
-        min-width: 200px;
-        padding: 0%;
-        box-shadow: inset 7px 7px 7px 6px;
-      }
-      main > p {
-        grid-area: p;
-      }
-      section {
-        grid-area: section;
-      }
-      section > p{
-        text-align: center;
-        font-size: 1.8vw; 
-      }
-      header > p {
-        display: inline;
-        position: relative;
-      }
-      footer {
-        text-align: center;
-      }
-      aside {
-        display: flex;
-      }
-      a {
-        text-decoration: none;
-        color: black;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
-      #dire {
-        width: 90%;
-        text-align: end;
-      }
-      #esq {
-        width: 90%;
-        text-align: start;
-      }
-      span{
-        font-size:4.2vw;
-      }
-      section > h2{
-        text-align: center;
-        padding-bottom:19px
-      }
-
-      footer{
-        margin: 20px;
-      }
+    
     </style>
   </head>
   <body>
