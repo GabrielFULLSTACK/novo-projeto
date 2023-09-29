@@ -82,6 +82,7 @@
   p {
    font-size: 2.2vw;
    text-indent: 10px;
+   text-align: justify;
   }
   section > p {
     padding: 10px;
