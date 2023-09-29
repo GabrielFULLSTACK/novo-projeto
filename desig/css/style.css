@@ -114,8 +114,8 @@
     font-size: 1.8vw; 
   }
   header > p {
-    display: inline;
-    position: relative;
+  /*   display: inline;
+    position: relative; */
   }
   footer {
     text-align: center;
