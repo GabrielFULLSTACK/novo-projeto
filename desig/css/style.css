@@ -81,11 +81,11 @@
 
   p {
    font-size: 2.2vw;
-   text-indent: 10px;
-   text-align: justify;
   }
-  section > p {
+  section > p ,main > p{
     padding: 10px;
+    text-indent: 10px;
+    text-align: justify;
   }
   header > aside {
     border: 2px solid black;

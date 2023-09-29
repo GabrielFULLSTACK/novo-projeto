@@ -23,7 +23,7 @@
 .show{
   transform: translateX(0%);
     opacity: 1;
-    transition: all 2s;  /* 3 segundos para aparecer e focar*/
+    transition: all 1.5s;  /* 3 segundos para aparecer e focar*/
     filter: blur(0); /*desfoque*/
   
 }
@@ -54,6 +54,18 @@
     </style>
   </head>
   <body>
+<noscript>
+  <style>
+    .hidden{
+  transform: translateX(0%);
+    opacity: 1;
+    transition: all 1.5s;  /* 3 segundos para aparecer e focar*/
+    filter: blur(0); /*desfoque*/
+  
+}
+  </style>
+</noscript>
+
     <header class="hidden">
       <h1 class="hidden">Gabriel Marques do Nascimento.</h1>
       <p class="hidden">Desenvolvedor Web</p>
@@ -62,7 +74,7 @@
         <p class="hidden"><b id="dire"> No. 08</b></p>
       </aside>
     </header>
-    <section id="habilidades">
+    <section class="hidden" id="habilidades">
       <h2 class="hidden"><span>M</span>inhas Habilidades</h2>
       <br />
       <h3 class="hidden"><span>L</span>inguagens de Programação:</h3>
