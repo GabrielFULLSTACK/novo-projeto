@@ -1,0 +1,10 @@
+body{
+    display: grid;
+    grid-template-columns: 20vw repeat(4, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "habilidades header header header"
+      "habilidades main main main "
+      "habilidades portifolio portifolio portifolio"
+      "footer footer footer footer";
+}

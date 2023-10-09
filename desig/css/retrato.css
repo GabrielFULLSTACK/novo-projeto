@@ -1,0 +1,30 @@
+/*Mobile*/
+   body{
+    grid-template-columns: 20vw repeat(2, auto);
+    grid-template-areas:
+      " header header"
+      " main main"
+      "habilidades habilidades"
+      "portifolio portifolio"
+      "footer footer";
+   
+ 
+   }
+   main{
+   
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+      ". img . "
+      " p p p ";
+  }
+   h2{
+    font-size: 1.3em;
+   }
+   section p,p{
+    font-size: 0.7em;
+   }
+   
+   aside > p {
+    font-size: 2.5vw;
+  }
