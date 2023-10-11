@@ -1,1 +1,69 @@
 @charset "UTF-8";
+
+@font-face {
+    font-family: "vintage";
+    src: url(../font/1d980b874473ee924182fb155ccfe605.eot);
+    src: url(../font/1d980b874473ee924182fb155ccfe605.woff2);
+    src: url(../font/1d980b874473ee924182fb155ccfe605.woff);
+}
+
+
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+header > h1 {
+    font-family: "vintage";
+    font-weight: 400;
+
+    text-align: center;
+}
+header > p {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+aside {
+    display: flex;
+    flex-direction: row;
+}
+aside > p {
+
+}
+main {
+position: relative;
+}
+
+main > img {
+    display: block;
+    width: 45vw;
+  
+    box-shadow: inset black -1px 0px 20px 20px, inset black 0px -18px 0px 20px, inset black -3px 20px 7px 20px;
+    box-sizing: border-box;
+    border: 10px solid black;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
