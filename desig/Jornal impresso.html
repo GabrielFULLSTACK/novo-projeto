@@ -4,47 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jornal Impresso</title>
-    <link rel="stylesheet" href="css/estilo." media="all" />
-    <!-- <link rel="stylesheet" href="css/paisagem."  media="screen and (orientation:landscape)">
-    <link rel="stylesheet" href="css/retrato." media="screen and (orientation:portrait)"> -->
+    <link rel="stylesheet" href="css/estilo."  />
+      <link rel="stylesheet" href="css/mobile.css" media="all"/>
     <link
       rel="shortcut icon"
       href="../imagens/favicon.ico"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="css/estyle.css" />
-    <link rel="stylesheet" href="css/mobile.css" />
-
-    <style>
-      .hidden {
-        transform: translateX(-100%);
-        opacity: 0;
-        filter: blur(15px); /*desfoque*/
-        transition: all 0.5s; /* all = todos elemt  2s = tempo de transition*/
-      }
-      .show {
-        transform: translateX(0%);
-        opacity: 1;
-        transition: all 0.8s; /* 3 segundos para aparecer e focar*/
-        filter: blur(0); /*desfoque*/
-      }
-
-      @font-face {
-        font-family: "pamela";
-        src: url("font/Pamela.ttf") format("truetype");
-        font-weight: 100;
-        font-style: italic;
-        font-display: swap;
-      }
-    </style>
+  
   </head>
   <body>
     <header class="hidden">
       <h1>Gabriel Marques do Nascimento.</h1>
       <p>Desenvolvedor Web</p>
       <aside class="hidden">
-        <p id="esq"><strong>VOL XXI.</strong></p>
-        <p class="hidden"><b id="dire"> No. 08</b></p>
+        <p class="hidden" id="esq"><strong>VOL XXI.</strong></p>
+        <p ><b id="dire"> No. 08</b></p>
       </aside>
     </header>
 

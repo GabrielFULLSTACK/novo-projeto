@@ -16,7 +16,13 @@
     src: url(../font/1d980b874473ee924182fb155ccfe605.woff2);
     src: url(../font/1d980b874473ee924182fb155ccfe605.woff);
 }
-
+@font-face {
+    font-family: "pamela";
+    src: url("font/Pamela.ttf") format("truetype");
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+  }
 
 
 * {
@@ -108,6 +114,18 @@ footer{
 
 
 
+.hidden {
+    transform: translateX(-100%);
+    opacity: 0;
+    filter: blur(15px); /*desfoque*/
+    transition: all 0.5s; /* all = todos elemt  2s = tempo de transition*/
+  }
+  .show {
+    transform: translateX(0%);
+    opacity: 1;
+    transition: all 0.8s; /* 3 segundos para aparecer e focar*/
+    filter: blur(0); /*desfoque*/
+  }
 
 
 

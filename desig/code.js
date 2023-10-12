@@ -2,16 +2,16 @@
   const element = document.querySelectorAll(".hidden");
   
   //                                              funçã0 Ero  
-const myObiserver = new IntersectionObserver((nome) => {
-  nome.forEach((nome) => {
+const myObiserver = new IntersectionObserver((entr) => {
+  entr.forEach((entr) => {
       // forEach pega elemento por element
-      if (nome.intersectionRatio) {
+      if (entr.intersectionRatio) {
         // isIntersecting : 'true ' = se tiver na vew port / 'False' = se tiver fora da vew port
-        nome.target.classList.add("show");
+        entr.target.classList.add("show");
    
       } else {
     
-        nome.target.classList.remove("show");
+        entr.target.classList.remove("show");
       }
     });
   });
