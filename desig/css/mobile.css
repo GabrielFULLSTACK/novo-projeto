@@ -38,6 +38,9 @@ body {
   height: 100%;
  
 }
+p{
+ padding:3px 0;
+}
 span {
     font-size:calc( .9em + 10px) ;
 }
@@ -75,7 +78,7 @@ main > img {
     margin: auto;
 }
 main > p {
-  font-size: unset;
+ 
 }
 section{
     text-align: justify;
