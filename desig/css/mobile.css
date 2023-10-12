@@ -23,7 +23,7 @@
   margin: 0%;
   padding: 0%;
 }
-body {
+body {margin: auto;
     background: linear-gradient(to bottom,
      #84715f ,
     #b2a496,
@@ -42,10 +42,11 @@ p{
  padding:3px 0;
 }
 span {
-    font-size:calc( .9em + 10px) ;
+    font-size:calc( 1.1em + 10px) ;
+    font-weight: 600;
 }
 header > h1 {
-    font-family: "vintage";
+    font-family: "vintage" , serif;
     font-weight: 400;
 
     text-align: center;
@@ -53,6 +54,7 @@ header > h1 {
 header > p {
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
+    font-weight: 700;
 }
 aside {
     display: flex;
@@ -64,6 +66,7 @@ aside > p {
  padding: 0 3px ;
 }
 main {
+  
 position: relative;
 padding: 10px;
 }
