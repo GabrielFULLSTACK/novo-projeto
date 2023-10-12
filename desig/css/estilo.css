@@ -1,0 +1,15 @@
+@media  (min-width:992px) {/*TELAS GRANDES*/
+    
+@font-face {
+    font-family: "vintage";
+    src: url(../font/1d980b874473ee924182fb155ccfe605.eot);
+    src: url(../font/1d980b874473ee924182fb155ccfe605.woff2);
+    src: url(../font/1d980b874473ee924182fb155ccfe605.woff);
+}
+body{
+
+}
+header > h1 {
+   
+}
+}
