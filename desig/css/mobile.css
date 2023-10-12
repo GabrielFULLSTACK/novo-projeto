@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+
+/*   paleta de cores
+      #84715f,
+      #b2a496,
+      #c0b5ac,
+      #c7c0b9,
+      #cbbdb1,
+      #ab9988,
+      #84715f*/
+
 @font-face {
     font-family: "vintage";
     src: url(../font/1d980b874473ee924182fb155ccfe605.eot);
@@ -14,8 +24,22 @@
   padding: 0%;
 }
 body {
-  width: 100vw;
+    background: linear-gradient(to bottom,
+     #84715f ,
+    #b2a496,
+    #c0b5ac,
+    #c7c0b9,
+    #cbbdb1,
+    #ab9988,
+    #84715f)  no-repeat;
+    background-size:contain ;
+ box-sizing: border-box;
+  width: 96vw;
   height: 100vh;
+ 
+}
+span {
+    font-size:calc( .9em + 10px) ;
 }
 header > h1 {
     font-family: "vintage";
@@ -30,12 +54,15 @@ header > p {
 aside {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    border: solid black 1px
 }
 aside > p {
-
+ padding: 0 3px ;
 }
 main {
 position: relative;
+padding: 10px;
 }
 
 main > img {
@@ -47,14 +74,21 @@ main > img {
     border: 10px solid black;
     margin: auto;
 }
+main > p {
+  font-size: unset;
+}
+section{
+    padding: 10px;
+}
 
 
 
 
 
 
-
-
+footer{
+    text-align: center;
+}
 
 
 
