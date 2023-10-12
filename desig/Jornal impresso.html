@@ -4,34 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jornal Impresso</title>
-    <link rel="stylesheet" href="css/estilo." media="all">
+    <link rel="stylesheet" href="css/estilo." media="all" />
     <!-- <link rel="stylesheet" href="css/paisagem."  media="screen and (orientation:landscape)">
     <link rel="stylesheet" href="css/retrato." media="screen and (orientation:portrait)"> -->
     <link
       rel="shortcut icon"
-      href="../imagens/favicon.ico" 
+      href="../imagens/favicon.ico"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="css/estyle.css">
-    <link rel="stylesheet" href="css/ANTiGO/style.css">
+    <link rel="stylesheet" href="css/estyle.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
 
     <style>
-
-.hidden{
-     transform: translateX(-100%);
-    opacity: 0;
-    filter: blur(15px); /*desfoque*/
-    transition: all .5s; /* all = todos elemt  2s = tempo de transition*/
- 
-}
-.show{
-  transform: translateX(0%);
-    opacity: 1;
-    transition: all .8s;  /* 3 segundos para aparecer e focar*/
-    filter: blur(0); /*desfoque*/
-  
-}
-
+      .hidden {
+        transform: translateX(-100%);
+        opacity: 0;
+        filter: blur(15px); /*desfoque*/
+        transition: all 0.5s; /* all = todos elemt  2s = tempo de transition*/
+      }
+      .show {
+        transform: translateX(0%);
+        opacity: 1;
+        transition: all 0.8s; /* 3 segundos para aparecer e focar*/
+        filter: blur(0); /*desfoque*/
+      }
 
       @font-face {
         font-family: "pamela";
@@ -40,26 +36,22 @@
         font-style: italic;
         font-display: swap;
       }
-     
-    
     </style>
   </head>
   <body>
-
-
     <header class="hidden">
-      <h1 class="hidden">Gabriel Marques do Nascimento.</h1>
-      <p class="hidden">Desenvolvedor Web</p>
-      <aside   >
-        <p class="hidden" id="esq"><strong>VOL XXI.</strong></p>
+      <h1>Gabriel Marques do Nascimento.</h1>
+      <p>Desenvolvedor Web</p>
+      <aside class="hidden">
+        <p id="esq"><strong>VOL XXI.</strong></p>
         <p class="hidden"><b id="dire"> No. 08</b></p>
       </aside>
     </header>
-   
-    <main>
-      <img class="hidden" src="imagens/mikey_realistic-910x1099.png" alt="perfil" />
 
-      <p class="hidden">
+    <main class="hidden">
+      <img src="imagens/mikey_realistic-910x1099.png" alt="perfil" />
+
+      <p>
         <span>O</span>lá, eu sou <strong>Gabriel </strong>, um apaixonado
         desenvolvedor web com uma paixão por criar experiências digitais
         excepcionais. Minha jornada no mundo do desenvolvimento começou com a
@@ -67,100 +59,123 @@
         explorando e aprimorando minhas habilidades para criar soluções
         impactantes.
       </p>
+      <h2><span>M</span>inhas Habilidades</h2>
+      <br />
+      <aside class="hidden">
+        <h3><span>L</span>inguagens de Programação:</h3>
+        <p>
+          Sou proficiente em
+          <strong>HTML5, CSS3, JavaScript e PHP.</strong> Estou sempre
+          atualizado com as tendências mais recentes em desenvolvimento web.
+        </p>
+      
+        <h3><span>F</span>rameworks e Bibliotecas:</h3>
+        <p>
+          Tenho experiência com frameworks populares, como React e Angular, e
+          utilizo bibliotecas como jQuery para criar interatividade.
+        </p>
+      
+        <h3><span>D</span>esenvolvimento Responsivo:</h3>
+        <p>
+          Crio sites e aplicativos que oferecem uma experiência perfeita em
+          todos os dispositivos, do desktop ao celular.
+        </p>
+      
+        <h3><span>G</span>estão de Banco de Dados:</h3>
+        <p>
+          Trabalho com bancos de dados MySQL e MongoDB, garantindo que os dados
+          dos meus projetos sejam seguros e eficientes.
+        </p>
+     
+        <h3><span>I</span>ntegração API:</h3>
+        <p>
+          Tenho experiência em integrar APIs de terceiros, como redes sociais e
+          serviços de pagamento, para expandir as funcionalidades dos meus
+          projetos.
+        </p>
+      </aside>
+
+      <aside class="hidden">
+        <h3><span>M</span>eu Portfólio</h3>
+        <p>
+          Aqui estão alguns dos projetos recentes que tenho orgulho de ter
+          trabalhado:
+        </p>
+    
+        <h3><a href="#">[Nome do Projeto]</a></h3>
+        <p>
+          - Desenvolvi um site dinâmico para uma startup de tecnologia que
+          aumentou sua presença online e ajudou a atrair novos clientes.
+        </p>
+     
+        <h3><a href="#">[Nome do Projeto]</a></h3>
+        <p>
+          - Criei um aplicativo web responsivo que otimizou a experiência do
+          usuário em dispositivos móveis, resultando em uma taxa de conversão
+          significativamente maior.
+        </p>
+     
+        <h3><a href="#">[Nome do Projeto]</a></h3>
+        <p>
+          Participei do desenvolvimento de uma plataforma de comércio eletrônico
+          que viu um aumento notável nas vendas após a implementação de recursos
+          de recomendação personalizada.
+        </p>
+      </aside>
     </main>
     <section class="hidden" id="habilidades">
-      <h2 class="hidden"><span>M</span>inhas Habilidades</h2>
-      <br />
-      <h3 class="hidden"><span>L</span>inguagens de Programação:</h3>
-      <p class="hidden">
-        Sou proficiente em <strong>HTML5, CSS3, JavaScript e PHP.</strong> Estou sempre
-        atualizado com as tendências mais recentes em desenvolvimento web.
-      </p>
-      <h3 class="hidden"><span>F</span>rameworks e Bibliotecas:</h3>
-      <p class="hidden">
-        Tenho experiência com frameworks populares, como React e Angular, e
-        utilizo bibliotecas como jQuery para criar interatividade.
-      </p>
-      <h3 class="hidden"><span>D</span>esenvolvimento Responsivo:</h3>
-      <p class="hidden">
-        Crio sites e aplicativos que oferecem uma experiência perfeita em todos
-        os dispositivos, do desktop ao celular.
-      </p>
-      <h3 class="hidden"><span>G</span>estão de Banco de Dados:</h3>
-      <p class="hidden">
-        Trabalho com bancos de dados MySQL e MongoDB, garantindo que os dados
-        dos meus projetos sejam seguros e eficientes.
-      </p>
-      <h3 class="hidden"><span>I</span>ntegração API:</h3>
-      <p class="hidden">
-        Tenho experiência em integrar APIs de terceiros, como redes sociais e
-        serviços de pagamento, para expandir as funcionalidades dos meus
-        projetos.
-      </p>
-    </section>
-    <section id="portifolio">
-      <h3 class="hidden"><span>M</span>eu Portfólio</h3>
-      <p class="hidden">
-        Aqui estão alguns dos projetos recentes que tenho orgulho de ter
-        trabalhado:
-      </p>
-      <h3 class="hidden"><a href="#">[Nome do Projeto]</a></h3>
-      <p class="hidden">
-        - Desenvolvi um site dinâmico para uma startup de tecnologia que
-        aumentou sua presença online e ajudou a atrair novos clientes.
-      </p>
-      <h3 class="hidden"><a href="#">[Nome do Projeto]</a></h3>
-      <p class="hidden">
-        - Criei um aplicativo web responsivo que otimizou a experiência do
-        usuário em dispositivos móveis, resultando em uma taxa de conversão
-        significativamente maior.
-      </p>
-      <h3 class="hidden"><a href="#">[Nome do Projeto]</a></h3>
-      <p class="hidden">
-        Participei do desenvolvimento de uma plataforma de comércio eletrônico
-        que viu um aumento notável nas vendas após a implementação de recursos
-        de recomendação personalizada.
-      </p>
-      <h2 class="hidden"><span >M</span>eu Processo de Trabalho</h2>
-      <h3 class="hidden"><span>C</span>ompreensão do Cliente:</h3>
-      <p class="hidden">
-        Antes de começar qualquer projeto, dedico tempo para entender as
-        necessidades do cliente e suas metas específicas.
-      </p>
-      <h3 class="hidden"><span>D</span>esign Responsivo:</h3>
-      <p class="hidden">
-        Concentro-me na criação de designs atraentes e funcionais que se ajustem
-        a qualquer tela. Desenvolvimento Eficiente: Escolho as melhores
-        tecnologias para cada projeto, garantindo um desenvolvimento eficiente e
-        de alta qualidade.
-      </p>
-      <h3 class="hidden"><span>T</span>estes Rigorosos:</h3>
-      <p class="hidden">
-        Realizo testes abrangentes em diferentes navegadores e dispositivos para
-        garantir a compatibilidade e desempenho ideais.
-      </p>
-      <h3 class="hidden"><span>M</span>anutenção Contínua:</h3>
-      <p class="hidden">
-        Ofereço suporte pós-lançamento, garantindo que os sites e aplicativos
-        que crio continuem funcionando sem problemas.
-      </p>
-      <h3 class="hidden" ><span>C</span>ontato</h3>
-      <p class="hidden">
-        Estou sempre aberto a novos desafios e colaborações interessantes. Se
-        você deseja discutir um projeto ou apenas bater um papo sobre
-        desenvolvimento web, não hesite em entrar em contato comigo em [seu
-        endereço de e-mail] ou [seu site pessoal, LinkedIn, ou outra plataforma
-        de contato].
-      </p> 
-      <p class="hidden">
+  
+      <h2 ><span>M</span>eu Processo de Trabalho</h2>
+      <aside class="hidden">
+        <h3><span>C</span>ompreensão do Cliente:</h3>
+        <p >
+          Antes de começar qualquer projeto, dedico tempo para entender as
+          necessidades do cliente e suas metas específicas.
+        </p>
+      </aside>
+      <aside class="hidden">
+        <h3 ><span>D</span>esign Responsivo:</h3>
+        <p >
+          Concentro-me na criação de designs atraentes e funcionais que se
+          ajustem a qualquer tela. Desenvolvimento Eficiente: Escolho as
+          melhores tecnologias para cada projeto, garantindo um desenvolvimento
+          eficiente e de alta qualidade.
+        </p>
+      </aside>
+      <aside class="hidden">
+        <h3 ><span>T</span>estes Rigorosos:</h3>
+        <p >
+          Realizo testes abrangentes em diferentes navegadores e dispositivos
+          para garantir a compatibilidade e desempenho ideais.
+        </p>
+      </aside>
+      <aside class="hidden">
+        <h3 ><span>M</span>anutenção Contínua:</h3>
+        <p >
+          Ofereço suporte pós-lançamento, garantindo que os sites e aplicativos
+          que crio continuem funcionando sem problemas.
+        </p>
+      </aside>
+      <aside class="hidden">
+        <h3 ><span>C</span>ontato</h3>
+        <p >
+          Estou sempre aberto a novos desafios e colaborações interessantes. Se
+          você deseja discutir um projeto ou apenas bater um papo sobre
+          desenvolvimento web, não hesite em entrar em contato comigo em [seu
+          endereço de e-mail] ou [seu site pessoal, LinkedIn, ou outra
+          plataforma de contato].
+        </p>
+      </aside>
+      <p >
         Vamos trabalhar juntos para transformar suas ideias em realidade na web!
       </p>
-      <p class="hidden">
+      <p >
         Lembre-se de personalizar o texto de acordo com suas próprias
         experiências, habilidades e projetos. Seu portfólio deve refletir sua
         personalidade e o tipo de desenvolvedor web que você é.
       </p>
     </section>
+
     <footer class="hidden">
       Copyright &copy; 2023
       <a
@@ -171,18 +186,16 @@
     </footer>
 
     <script src="code.js"></script>
-    
-    
+
     <noscript>
-  <style>
-    .hidden{
-  transform: translateX(0%);
-    opacity: 1;
-    transition: all 1.5s;  /* 3 segundos para aparecer e focar*/
-    filter: blur(0); /*desfoque*/
-  
-}
-  </style>
-</noscript>
+      <style>
+        .hidden {
+          transform: translateX(0%);
+          opacity: 1;
+          transition: all 1.5s; /* 3 segundos para aparecer e focar*/
+          filter: blur(0); /*desfoque*/
+        }
+      </style>
+    </noscript>
   </body>
 </html>

@@ -1,5 +1,7 @@
-
-//                                              funçã0 Ero  
+// querySelectorAll pega todos elem com a class hidden
+  const element = document.querySelectorAll(".hidden");
+  
+  //                                              funçã0 Ero  
 const myObiserver = new IntersectionObserver((nome) => {
   nome.forEach((nome) => {
       // forEach pega elemento por element
@@ -14,7 +16,7 @@ const myObiserver = new IntersectionObserver((nome) => {
     });
   });
 
-  const element = document.querySelectorAll(".hidden"); // querySelectorAll pega a class last-one
+
   
   // virou uma lista como varios elementos // pega elent por element // obiseva elemento por elemento
   element.forEach((element) => myObiserver.observe(element));

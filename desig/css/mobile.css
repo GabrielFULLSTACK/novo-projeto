@@ -56,13 +56,13 @@ header > p {
     text-align: center;
     font-weight: 700;
 }
-aside {
+header > aside {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     border: solid black 1px
 }
-aside > p {
+header > aside > p {
  padding: 0 3px ;
 }
 main {
