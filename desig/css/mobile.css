@@ -41,7 +41,7 @@ body {margin: 0 auto;
     #84715f)  no-repeat;
     background-size:contain ;
  box-sizing: border-box;
-  width: 95vw;
+  width: 95vwppp;
   height: 100%;
  
 }
@@ -55,7 +55,7 @@ span {
 header > h1 {
     font-family: "vintage" , serif;
     font-weight: 400;
-    font-size:80vw;
+    font-size: 30px;
     text-align: center;
 }
 header > p {
