@@ -55,7 +55,7 @@ span {
 header > h1 {
     font-family: "vintage" , serif;
     font-weight: 400;
-
+    font-size:80vw;
     text-align: center;
 }
 header > p {
@@ -67,7 +67,8 @@ header > aside {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: solid black 1px
+    border: solid black 1px;
+    font-size:20px;
 }
 header > aside > p {
  padding: 0 3px ;
@@ -107,6 +108,7 @@ section{
 footer{
     text-align: center;
     padding: 10px;
+    font-size:10px;
 }
 
 
