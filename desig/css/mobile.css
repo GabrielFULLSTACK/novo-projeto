@@ -125,7 +125,7 @@ footer{
   .show {
     transform: translateX(0%);
     opacity: 1;
-    transition: all 0.8s; /* 3 segundos para aparecer e focar*/
+    transition: all 1s; /* 3 segundos para aparecer e focar*/
     filter: blur(0); /*desfoque*/
   }
 

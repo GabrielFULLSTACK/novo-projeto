@@ -1,16 +1,18 @@
 @media screen and  (min-width:992px) {/*TELAS GRANDES*/
 
 *{
-  font-size: 1.1em;
+  
 }
 body {
     display: grid;
-    width: 80vw;
-grid-template-columns: 20vw 65vw;
+    width: 95vw;
+    font-size: large;
+grid-template-columns: 26vw 60vw 2vw;
 grid-template-areas: 
-"sq header"
-"sq main"
-"sq main"
+" header header header"
+"sq main  main"
+"nota nota  nota"
+"footer footer footer"
 ;
 }
 header {
@@ -21,34 +23,38 @@ header h1 {
 }
 main > img {
     grid-area: main;
-    margin: 0% auto;
-    width: 23vw;
+    margin: 0% ;
+    width: 20vw;
   
 }
+p #bora{
+  
+}
+
 #habilidades  {
     grid-area: sq;
-    font-size: xx-small;
+    border-right: 2px solid black;  padding-right: 10px;
 }
-section .hidden {
-    transform: translateX(0%);
-    opacity: 1;
-    border-right: 2px solid black;
-    padding-right: 4px;
-}
+#habilidades  h2 {
 
 
-.hidden {
-    transform: translateX(0%);
-    opacity: 0;
-    filter: blur(15px); /*desfoque*/
-    /* all = todos elemt  2s = tempo de transition*/
+}
+#habilidades  h3 {
+  text-decoration: underline;
   }
+ section >.hidden{
+    transform: translateX(0%);
+    filter: blur(0); 
+    opacity: 1;
+   
   
-  .show {
-    transform: translateX(0%);
-    opacity: 1;
-    transition: all 0.8s; /* 3 segundos para aparecer e focar*/
-    filter: blur(0); /*desfoque*/
-  }
-
+}h2 > span {
+  font-size:calc( 1em + 19px) ;
+}
+.note {
+  grid-area: nota;
+}
+footer{
+  grid-area: footer;
+}
 }
