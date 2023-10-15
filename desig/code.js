@@ -13,7 +13,7 @@ const myObiserver = new IntersectionObserver((entr) => {
       
     } else {
       entr.target.classList.remove("show");
-      
+      entr.target.classList.remove("hidden");
       
     }
     console.log(element)

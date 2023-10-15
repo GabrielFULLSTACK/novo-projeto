@@ -1,60 +1,82 @@
-@media screen and  (min-width:992px) {/*TELAS GRANDES*/
+@media screen and (min-width: 992px) {
+      /*TELAS GRANDES*/
 
-*{
-  
-}
-body {
-    display: grid;
-    width: 95vw;
-    font-size: large;
-grid-template-columns: 26vw 60vw 2vw;
-grid-template-areas: 
-" header header header"
-"sq main  main"
-"nota nota  nota"
-"footer footer footer"
-;
-}
-header {
-grid-area: header;
-}
-header h1 {
-    font-size: 2.4em;
-}
-main > img {
-    grid-area: main;
-    margin: 0% ;
-    width: 20vw;
-  
-}
-p #bora{
-  
-}
+      * {
+      }
+      body {
+            display: grid;
+            width: 95vw;
+            font-size: large;
+            grid-template-columns: 26vw 60vw 2vw;
+            grid-template-areas:
+                  " header header header"
+                  "hab main  main"
+                  ". pro pro "
+                  ". nota  nota"
+                  ". footer footer";
+      }
+      header {
+            grid-area: header;
+      }
+      header h1 {
+            font-size: 2.4em;
+      }
+      main {   
+        grid-area: main;
+         
+      }
+      main > div{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
 
-#habilidades  {
-    grid-area: sq;
-    border-right: 2px solid black;  padding-right: 10px;
-}
-#habilidades  h2 {
+       
+      }
+      main > div >  img{
+       
+       
+            margin: 0%;
+            width: 20vw;
+      }
+      main > aside{
+        display: block;
+        float: left;
+      }
+    
+     
+     #bora {
+       margin-left: 10px;
+       border: 1px dashed black;
+       height: auto;
+       text-align: center;
+       justify-content: center;
+      }
+      .projetos {
+            grid-area: pro;
+      }
 
-
-}
-#habilidades  h3 {
-  text-decoration: underline;
-  }
- section >.hidden{
-    transform: translateX(0%);
-    filter: blur(0); 
-    opacity: 1;
-   
-  
-}h2 > span {
-  font-size:calc( 1em + 19px) ;
-}
-.note {
-  grid-area: nota;
-}
-footer{
-  grid-area: footer;
-}
-}
+      .habilidades {
+            grid-area: hab;
+            border-right: 2px solid black;
+            padding-right: 10px;
+      }
+      .habilidades h2 {
+      }
+      .habilidades h3 {
+            text-decoration: underline;
+      }
+      section > .hidden {
+            transform: translateX(0%);
+            filter: blur(0);
+            opacity: 1;
+      }
+      h2 > span {
+            font-size: calc(1em + 19px);
+      }
+      .note {
+            grid-area: nota;
+      }
+      footer {
+            grid-area: footer;
+      }
+    }
