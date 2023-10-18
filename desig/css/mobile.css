@@ -27,6 +27,24 @@
       margin: 0%;
       padding: 0%;
 }
+
+/* efect */
+.hidden {
+      transform: translateX(-100%);
+      opacity: 0;
+      filter: blur(15px); /*desfoque*/
+      /* all = todos elemt  2s = tempo de transition*/
+}
+
+.show {
+      transform: translateX(0%);
+      opacity: 1;
+      transition: all 1s; /* 3 segundos para aparecer e focar*/
+      filter: blur(0); /*desfoque*/
+}
+/* efect */
+
+
 body {
       margin: 0 auto;
       background: linear-gradient(
@@ -111,19 +129,6 @@ footer {
       font-size: 15px;
 }
 
-.hidden {
-      transform: translateX(-100%);
-      opacity: 0;
-      filter: blur(15px); /*desfoque*/
-      /* all = todos elemt  2s = tempo de transition*/
-}
-
-.show {
-      transform: translateX(0%);
-      opacity: 1;
-      transition: all 1s; /* 3 segundos para aparecer e focar*/
-      filter: blur(0); /*desfoque*/
-}
 #bora {
     margin: 10px 0 0 0;
  padding: 10px;
