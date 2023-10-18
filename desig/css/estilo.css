@@ -9,7 +9,7 @@
             width: 95vw;
             
             font-size: large;
-            grid-template-columns: repeat(3,auto);
+            grid-template-columns: 290px auto;
             /* grid-template-areas:
                   " header header header"
                   "hab main  main"
@@ -42,9 +42,22 @@
             /* grid-area: hab; */
             grid-row: 2/5;
             grid-column: 1;
-            width: 23vw;
+          
             border-right: 2px solid black;
+            
+      }
+      .habilidades *{
             padding-right: 10px;
+      }
+
+      .habilidades  h2 {
+            padding: 0%;
+            margin: 0%;
+            font-size: 110%;
+      }
+      .habilidades  span,.habilidades  span{
+            padding: 0%;
+            margin: 0%;
       }
       .note {
             /* grid-area: nota; */

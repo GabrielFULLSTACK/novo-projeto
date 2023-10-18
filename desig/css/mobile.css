@@ -47,6 +47,8 @@ body {
 }
 p {
       padding: 3px 0;
+      text-align: justify;
+      text-indent: 15px;
 }
 
 
@@ -91,9 +93,9 @@ main  img {
 }
 main > p {
 }
-section {
-      text-align: justify;
-      padding: 10px;
+section *{
+      
+   
 }
 
 .note {
