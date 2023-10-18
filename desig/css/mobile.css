@@ -28,22 +28,6 @@
       padding: 0%;
 }
 
-/* efect */
-.hidden {
-      transform: translateX(-100%);
-      opacity: 0;
-      filter: blur(15px); /*desfoque*/
-      /* all = todos elemt  2s = tempo de transition*/
-}
-
-.show {
-      transform: translateX(0%);
-      opacity: 1;
-      transition: all 1s; /* 3 segundos para aparecer e focar*/
-      filter: blur(0); /*desfoque*/
-}
-/* efect */
-
 
 body {
       margin: 0 auto;
@@ -85,7 +69,7 @@ header > p {
       text-align: center;
       font-weight: 700;
 }
-header > aside {
+header  aside.show{
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -135,3 +119,19 @@ footer {
  
   
    }
+   
+/* efect */
+.hidden {
+      transform: translateX(-100%);
+      opacity: 0;
+      filter: blur(15px); /*desfoque*/
+      /* all = todos elemt  2s = tempo de transition*/
+}
+
+.show {
+      transform: translateX(0%);
+      opacity: 1;
+      transition: all 1s; /* 3 segundos para aparecer e focar*/
+      filter: blur(0); /*desfoque*/
+}
+/* efect */
