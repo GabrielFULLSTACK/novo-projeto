@@ -69,14 +69,16 @@ header > p {
       text-align: center;
       font-weight: 700;
 }
-header  aside.show{
-      display: flex;
+header  aside{
+     display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: space-between;  
+      width: 100%;
       border: solid black 1px;
       font-size: 20px;
 }
 header > aside > p {
+      width: 100%;
       padding: 0 3px;
 }
 main {
@@ -133,5 +135,6 @@ footer {
       opacity: 1;
       transition: all 1s; /* 3 segundos para aparecer e focar*/
       filter: blur(0); /*desfoque*/
+    
 }
 /* efect */
