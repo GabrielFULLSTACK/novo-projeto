@@ -80,6 +80,7 @@ header  aside{
 header > aside > p {
       width: 100%;
       padding: 0 3px;
+      text-wrap: nowrap;
 }
 main {
       position: relative;
