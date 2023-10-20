@@ -12,6 +12,8 @@
 
 // }
 
+
+
 const fundo = color => {
   const body =  document.querySelector('body');
   const dark = document.querySelector('button#dark');
@@ -26,6 +28,7 @@ else if(color=='whiite'){
   body.style = 'background-color:;white color:black ';
   dark.style.display = 'block';
   claro.style.display = 'none'
+  
  }
 }
 
