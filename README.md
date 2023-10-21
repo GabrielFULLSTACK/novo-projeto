@@ -5,4 +5,4 @@
 <a href="https://gabrieel-marques-do-nascimento.github.io/novo-projeto/desig/Jornal impresso.html">Projeto 2</a>
 
 
-<a href="https://gabrieel-marques-do-nascimento.github.io/novo-projeto/Card">Projeto 3</a>
+<a href="https://gabrieel-marques-do-nascimento.github.io/novo-projeto/Card/Cbb.html">Projeto 3</a>
