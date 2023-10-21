@@ -22,7 +22,6 @@ img {
       background: black;
       padding: 1px 0 1px 0;
       box-shadow: 2px 9px 20px 2px black;
-      
 }
 li {
       list-style: none;
@@ -33,7 +32,6 @@ span {
 }
 menu {
       display: none;
-    
 }
 #naveg {
       background: black;
@@ -41,8 +39,7 @@ menu {
       display: block;
       border-radius: 20px 20px;
       text-align: center;
-      padding: 10px 10px ;
-     
+      padding: 10px 10px;
 }
 #naveg:hover {
       cursor: pointer;
@@ -55,7 +52,6 @@ menu a {
       background: rgb(90, 90, 90);
       color: white;
       border-top: grey solid;
-
 }
 menu a:hover {
       background: grey;
@@ -64,27 +60,3 @@ menu a:hover {
 main {
       margin: 19px 0 0 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
