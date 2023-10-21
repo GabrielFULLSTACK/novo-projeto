@@ -17,10 +17,11 @@ img {
       display: block;
       max-width: 30%;
       margin: auto;
+      margin-top: 10px;
       border-radius: 90px;
       background: black;
       padding: 1px 0 1px 0;
-      box-shadow: 1px -2px 20px 2px black;
+      box-shadow: 2px 9px 20px 2px black;
       
 }
 li {
@@ -41,11 +42,13 @@ menu {
       border-radius: 20px 20px;
       text-align: center;
       padding: 10px 10px ;
+     
 }
 #naveg:hover {
       cursor: pointer;
       color: rgb(172, 170, 170);
 }
+
 menu a {
       display: block;
       padding: 10px;
@@ -57,3 +60,31 @@ menu a {
 menu a:hover {
       background: grey;
 }
+
+main {
+      margin: 19px 0 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
