@@ -127,6 +127,15 @@ footer {
  
   
    }
+   a{
+      color: black;
+      text-decoration: underline; 
+   }
+   a:hover{
+      color: rgb(13, 0, 255);
+      background-color: #84715f2a;
+     text-decoration: none;
+   }
    
 /* efect */
 .hidden {
@@ -143,4 +152,5 @@ footer {
       filter: blur(0); /*desfoque*/
     
 }
+
 /* efect */
