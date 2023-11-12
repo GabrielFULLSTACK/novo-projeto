@@ -52,12 +52,6 @@ p {
       text-align: justify;
    
 }
-
-
-span {
-      font-size: calc(1.1em + 10px);
-      font-weight: 600;
-}
 header > h1 {
       font-family: "vintage", serif;
       font-weight: 400;
