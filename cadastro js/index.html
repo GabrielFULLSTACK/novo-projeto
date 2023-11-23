@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+      <head>
+            <meta charset="UTF-8" />
+            <meta
+                  name="viewport"
+                  content="width=device-width, initial-scale=1.0"
+            />
+            <title>Document</title>
+      </head>
+      <style>
+            @import url("https://fonts.googleapis.com/css2?família=Roboto:wght@100; 300; 400; 500; 700; 900&family=Wellfleet&display=swap");
+            * {
+                  padding: 0;
+                  margin: 0;
+                  font-family: "roboto", sans-serif;
+            }
+
+            body {
+                  background-image: url("https://images.pexels.com/photos/18962478/pexels-photo-18962478/free-photo-of-beleza-encanto-crepusculo-cair-da-noite.jpeg");
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  background-attachment: fixed;
+            }
+            .container {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  width: 100%;
+                  margin-top: 100px;
+            }
+            .card {
+                width: auto;
+                  background: #ffffff80;
+                  padding: 30px;
+                  border-radius: 4% ;
+                  box-shadow: 3px 3px 1px 0px;
+            }
+      </style>
+      <body>
+            <div class="container">
+                  <div class="card">
+                        <h1>ENTRAR</h1>
+                        <div class="label-float">
+                              <input type="text" id="usuario" paceholder="" />
+                              <label for="usuario">usuario</label>
+                        </div>
+
+                        <div class="label-float">
+                              <input type="pessword" id="senha" paceholder="" />
+                              <label for="senha">senha</label>
+                        </div>
+
+                        <div class="justfy-center">
+                              <button>entrar</button>
+                        </div>
+                        <div><hr /> </div>
+                        <p>
+                              Não tem uma conta ?
+                              <a href=" # "> Cadastre-se</a>
+                        </p>
+                  </div>
+            </div>
+      </body>
+</html>
