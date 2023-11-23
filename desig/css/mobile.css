@@ -52,12 +52,6 @@ p {
       text-align: justify;
    
 }
-
-
-span {
-      font-size: calc(1.1em + 10px);
-      font-weight: 600;
-}
 header > h1 {
       font-family: "vintage", serif;
       font-weight: 400;
@@ -131,11 +125,19 @@ footer {
       color: black;
       text-decoration: underline; 
    }
+   h2 > span ,p > span{
+            font-size: calc(1em + 19px);
+      }
    a:hover{
       color: rgb(13, 0, 255);
       background-color: #84715f2a;
      text-decoration: none;
    }
+   
+   .habilidades > h2{
+     margin-bottom: 40px;
+   }
+   
    
 /* efect */
 .hidden {
