@@ -57,6 +57,7 @@ header > h1 {
       font-weight: 400;
       font-size: 40px;
       text-align: center;
+  
 }
 header > p {
       font-family: "Times New Roman", Times, serif;
@@ -112,7 +113,7 @@ section *{
 footer {
       text-align: center;
       padding: 10px;
-      font-size: 15px;
+      font-size: 16px;
 }
 
 #bora {
@@ -134,10 +135,13 @@ footer {
      text-decoration: none;
    }
    
-   .habilidades > h2{
-     margin-bottom: 40px;
+  * > h2 {
+     margin : 15px 0;
    }
-   
+   * > h3{
+      font-size: 21.5px;
+      margin: 5px;
+   }
    
 /* efect */
 .hidden {
