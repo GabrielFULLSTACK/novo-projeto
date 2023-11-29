@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+/*   paleta de cores
+      #84715f,
+      #b2a496,
+      #c0b5ac,
+      #c7c0b9,
+      #cbbdb1,
+      #ab9988,
+      #84715f*/
+
+@font-face {
+      font-family: "vintage";
+      src: url(../font/1d980b874473ee924182fb155ccfe605.eot);
+      src: url(../font/1d980b874473ee924182fb155ccfe605.woff2);
+      src: url(../font/1d980b874473ee924182fb155ccfe605.woff);
+}
+@font-face {
+      font-family: "pamela";
+      src: url("font/Pamela.ttf") format("truetype");
+      font-weight: 100;
+      font-style: italic;
+      font-display: swap;
+}
+
+* {
+      margin: 0%;
+      padding: 0%;
+}
+
+
+body {
+      margin: 0 auto;
+      background: linear-gradient(
+                  to bottom,
+                  #84715f,
+                  #b2a496,
+                  #c0b5ac,
+                  #c7c0b9,
+                  #cbbdb1,
+                  #ab9988,
+                  #84715f
+            ) 
+            no-repeat;
+      background-size: contain;
+      box-sizing: border-box;
+      width: 95vw;
+      height: 100%;
+}
+p { 
+      padding: 3px 0;
+      text-align: justify;
+   
+}
+header > h1 {
+      font-family: "vintage", serif;
+      font-weight: 400;
+      font-size: 40px;
+      text-align: center;
+  
+}
+header > p {
+      font-family: "Times New Roman", Times, serif;
+      text-align: center;
+      font-weight: 700;
+}
+header  aside{
+     display: flex;
+      flex-direction: row;
+      justify-content: space-between;  
+      width: 100%;
+      border: double black 4px;
+      font-size: 20px;
+}
+header > aside > p {
+      width: 100%;
+      padding: 0 3px;
+      text-wrap: nowrap;
+      font-weight: 800;
+}
+main {
+      position: relative;
+      padding: 10px;
+}
+
+main  img {
+      display: block;
+      width: 45vw;
+      box-shadow: inset black -1px 0px 20px 20px, inset black 0px -18px 0px 20px,
+            inset black -3px 20px 7px 20px;
+      box-sizing: border-box;
+      border: 10px solid black;
+      margin: auto;
+}
+main > p {
+}
+.habilidades a {
+  width: 100%;
+}
+
+section *{
+      
+   
+}
+
+.note {
+      margin: 10px;
+      padding: 4px;
+      border: 2px dashed black;
+      background: #a8a7a7;
+}
+
+footer {
+      text-align: center;
+      padding: 10px;
+      font-size: 16px;
+}
+
+#bora {
+    margin: 10px 0 0 0;
+ padding: 10px;
+ 
+  
+   }
+   a{
+      color: black;
+      text-decoration: underline; 
+   }
+   h2 > span ,p > span{
+            font-size: calc(1em + 19px);
+      }
+   a:hover{
+      color: rgb(13, 0, 255);
+      background-color: #84715f2a;
+     text-decoration: none;
+   }
+   
+  * > h2 {
+     margin : 15px 0;
+   }
+   * > h3{
+      font-size: 21.5px;
+      margin: 5px;
+   }
+   
+/* efect */
+.hidden {
+      transform: translateX(-100%);
+      opacity: 0;
+      filter: blur(15px); /*desfoque*/
+      /* all = todos elemt  2s = tempo de transition*/
+}
+
+.show {
+      transform: translateX(0%);
+      opacity: 1;
+      transition: all 1s; /* 3 segundos para aparecer e focar*/
+      filter: blur(0); /*desfoque*/
+    
+}
+
+/* efect */

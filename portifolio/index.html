@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+      <head>
+            <meta charset="UTF-8" />
+            <meta
+                  name="viewport"
+                  content="width=device-width, initial-scale=1.0"
+            />
+            <title>GabrielMarques.com.br</title>
+            <link
+                  rel="stylesheet"
+                  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+            />
+            <link
+                  rel="shortcut icon"
+                  href="imagens/favicon.ico"
+                  type="image/x-icon"
+            />
+            <link rel="stylesheet" href="as_css/mobile.css" media="all" />
+            <link rel="stylesheet" href="as_css/estilo.css" />
+
+            <link
+                  rel="stylesheet"
+                  href="as_css/paisagem.css"
+                  media="screen and (orientation:landscape)"
+            />
+            <link
+                  rel="stylesheet"
+                  href="as_css/retrato.css"
+                  media="screen and (orientation:portrait)"
+            />
+      </head>
+      <body>
+            <header>
+                  <h1>Gabriel Marques do Nascimento</h1>
+                  <h3>Desenvolvedor Web</h3>
+                  <img
+                        src="imagens/mikey_realistic-910x1099.jpg"
+                        alt="minha foto"
+                  />
+            </header>
+            <span
+                  id="naveg"
+                  onclick="abrir_menu()"
+                  class="material-symbols-outlined"
+            >
+                  menu
+            </span>
+            <menu id="items">
+                  <li><a href="#quem">Quem sou</a></li>
+                  <li><a href="#experiencias">Experiencias</a></li>
+                  <li><a href="#projetos">Projetos</a></li>
+                  <button id="claro" onclick="fundo('whiite')">white</button>
+                  <button id="dark" onclick="fundo('dark')">Dark</button>
+            </menu>
+            <main>
+                  <!--   <h2>Titulo do Eslogan</h2>
+                  <p class="parag">Paragrafo do Eslogan</p> -->
+
+                  <h2 id="quem">Quem Sou</h2>
+
+                  <p>
+                        <span>O</span>lá, eu sou <strong>Gabriel </strong>, um
+                        apaixonado desenvolvedor web com uma paixão por criar
+                        experiências digitais excepcionais. Minha jornada no
+                        mundo do desenvolvimento começou com a curiosidade de
+                        desvendar os mistérios da web, e desde então, venho
+                        explorando e aprimorando minhas habilidades para criar
+                        soluções impactantes.
+                  </p>
+                  <p></p>
+                  <p>Concentrando em performace,Animacões............</p>
+                  <nav id="social">
+                        <a href="#social">Instagram</a>
+                        <a href="#social">Facebook</a>
+                        <a href="#social">Linkedin</a>
+                        <a href="#social">Discord</a>
+                        <a href="#social">GitHub</a>
+                        <a href="#Behance">Behance</a>
+                  </nav>
+
+                  <h2 id="experiencias">Experiências</h2>
+                  <p>lista com details que desaparece se o outro for clicado</p>
+
+                  <h2 id="projetos">Projetos</h2>
+                  <article>
+                        <aside>
+                              <a
+                                    target="_blank"
+                                    rel="noopener"
+                                    href="https://gabrieel-marques-do-nascimento.github.io/novo-projeto/desig/Jornal%20impresso.html"
+                                    ><h1><span>j</span>ornal Impreço</h1></a
+                              >
+                              <p>
+                                    Desenvolvi um site dinâmico para uma startup
+                                    de tecnologia que aumentou sua presença
+                                    online e ajudou a atrair novos clientes.
+                              </p>
+                        </aside>
+                        <aside>
+                              <h1>[Nome do Projeto]</h1>
+                              <p>
+                                    Criei um aplicativo web responsivo que
+                                    otimizou a experiência do usuário em
+                                    dispositivos móveis, resultando em uma taxa
+                                    de conversão significativamente maior
+                              </p>
+                        </aside>
+
+                        <aside>
+                              <h1>[Nome do Projeto]</h1>
+
+                              <p>
+                                    Participei do desenvolvimento de uma
+                                    plataforma de comércio eletrônico que viu um
+                                    aumento notável nas vendas após a
+                                    implementação de recursos de recomendação
+                                    personalizada.
+                              </p>
+                        </aside>
+                  </article>
+
+                  <a
+                        href="https://gabrieel-marques-do-nascimento.github.io/novo-projeto/"
+                        >Repositorio GitHub</a
+                  >
+
+                  <section>
+                        <h2>Serviços</h2>
+
+                        <h3><span>M</span>inhas Habilidades</h3>
+                        Linguagens de Programação: Sou proficiente em HTML5,
+                        CSS3, JavaScript e PHP. Estou sempre atualizado com as
+                        tendências mais recentes em desenvolvimento web.
+                        Frameworks e Bibliotecas: Tenho experiência com
+                        frameworks populares, como React e Angular, e utilizo
+                        bibliotecas como jQuery para criar interatividade.
+                        Desenvolvimento Responsivo: Crio sites e aplicativos que
+                        oferecem uma experiência perfeita em todos os
+                        dispositivos, do desktop ao celular. Gestão de Banco de
+                        Dados: Trabalho com bancos de dados MySQL e MongoDB,
+                        garantindo que os dados dos meus projetos sejam seguros
+                        e eficientes. Integração API: Tenho experiência em
+                        integrar APIs de terceiros, como redes sociais e
+                        serviços de pagamento, para expandir as funcionalidades
+                        dos meus projetos.
+                  </section>
+                  <section>
+                        <h2>conhecimentos</h2>
+                        passe o mouse no carde para ler html css js c# outross #
+                        # # #
+                  </section>
+            </main>
+            <footer>
+                  <p>
+                        Copyright &copy; 2023
+                        <a href="#">gabrieel-marques-do-nascimento.com </a>
+                        Todos direitos reservados
+                  </p>
+            </footer>
+            <script>
+                  function abrir_menu() {
+                        // menu
+                        const naveg = document.querySelector("span#naveg");
+                        if (items.style.display == "block") {
+                              items.style.display = "none";
+                              naveg.style = "border-radius: 20px 20px;";
+                        } else {
+                              naveg.style = "border-radius: 20px 20px 0 0 ;";
+                              items.style.display = "block";
+                        }
+                  }
+
+                  // const claro = document.querySelector("button#claro");
+                  // const dark = document.querySelector("button#dark");
+                  // function color(params) {
+                  //  if (params == 'dark') {
+                  //     claro.style.display = "block";
+                  //     dark.style.display = "none";
+                  //  } else if( params == 'white') {
+                  //     claro.style.display = "none";
+                  //     dark.style.display = "grid";
+
+                  //  };
+                  // //  const body = ducument.querySelector('body');
+                  // //  body.target.classList.add(params);
+                  // }
+            </script>
+            <script src="java/menu.js"></script>
+      </body>
+</html>

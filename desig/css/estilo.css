@@ -1,0 +1,177 @@
+@media screen and (min-width: 900px) {
+      /*TELAS GRANDES*/
+
+      * { margin: 0%;
+            padding: 0%;
+      }
+      
+      body {  
+            display: grid;
+            width: 95vw; 
+            
+            font-size: large;
+            grid-template-columns: auto auto;
+
+      }      
+      header {
+       width: 87w;
+            grid-row: 1;
+            grid-column: 1/-1;
+      }
+      header h1 {
+            font-size: 2.4em;
+      }
+      p{
+        font-size: 1.3em;
+      }
+      main {   
+    
+     grid-row: 2;
+     grid-column: 2/-1;
+         
+      }
+      .projetos {
+
+            padding: 2px 5px 1px 5px;
+            grid-row: 3;
+            grid-column: 2/-2;
+            
+            
+       }
+       .habilidades {
+          
+            max-width: 300px;
+            grid-row: 2/5;
+            grid-column: 1;
+          
+            border-right: 2px solid black;
+            
+      }
+      .habilidades *{
+            padding: 3px;
+      }
+      .habilidades  p{
+            padding-right: 10px;
+      }
+
+      .habilidades  h2 {
+            padding: 0 0 0 0;
+            margin: 0%;
+            font-size: 110%;
+      }
+      .habilidades  span,.habilidades  span{
+            padding: 0%;
+            margin: 0%;
+      }
+      .habilidades h3 {
+            margin: 0%;
+           border-bottom: 2px solid black;
+      }
+      .note {
+            /* grid-area: nota; */
+            grid-row: 4;
+            grid-column: 2/-2 ;
+      }
+      footer {
+            /* grid-area: footer; */
+            grid-row: 5;
+            grid-column: 2/-2 ;
+            text-align: center;
+      }
+      main > div{
+         display: flex;
+         flex-direction: row;
+       
+         justify-content: space-between;
+
+       
+      }
+      main > div >  img{
+            padding: 0;
+            margin: -10px  0 0px -10px;
+            width: 18vw;
+      }
+      main > aside{
+        display: block;
+        float: left;
+      }
+    
+     
+     #bora {
+       margin-left: 10px;
+       border: 2px  outset  black;
+       
+       height: auto;
+       text-align: center;
+       justify-content: center;
+      }
+     
+
+  
+     
+   
+      
+    
+    }
+
+
+@media screen and (min-width:1200px) {
+      body {  
+            display: grid;
+            
+            
+            font-size: large;
+            grid-template-columns: auto auto 1fr;
+
+      }      
+      header {
+            
+            grid-row: 1;
+            grid-column: 1/6;
+      }
+      header h1 {
+            font-size: 2.4em;
+      }
+      main {   
+            
+     grid-row: 2;
+     grid-column: 2;
+         
+      }
+      div > P {
+        
+      }
+      .projetos {
+            min-width: 200px;
+            border-left: 1px black solid;
+            padding: 2px 5px 1px 5px;
+            grid-row: 2/4;
+            grid-column: -1;
+            
+            
+       }
+       .habilidades {
+          
+            max-width: 300px;
+            grid-row: 2/5;
+            grid-column: 1;
+          
+            border-right: 2px solid black;
+            
+    
+}
+.note {
+      /* grid-area: nota; */
+      grid-row: 4;
+      grid-column: 2/-2 ;
+}
+footer {
+      /* grid-area: footer; */
+      grid-row: 5;
+      grid-column: 2/-2 ;
+}
+
+main > div >  img{
+      width: 16vw;
+}
+  }
